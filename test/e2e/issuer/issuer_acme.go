@@ -22,9 +22,9 @@ import (
 	apierrors "k8s.io/apimachinery/pkg/api/errors"
 	metav1 "k8s.io/apimachinery/pkg/apis/meta/v1"
 
-	"github.com/jetstack/cert-manager/pkg/apis/certmanager/v1alpha1"
-	"github.com/jetstack/cert-manager/test/e2e/framework"
-	"github.com/jetstack/cert-manager/test/util"
+	"github.com/midnightconman/cert-manager/pkg/apis/certmanager/v1alpha1"
+	"github.com/midnightconman/cert-manager/test/e2e/framework"
+	"github.com/midnightconman/cert-manager/test/util"
 )
 
 const invalidACMEURL = "http://not-a-real-acme-url.com"

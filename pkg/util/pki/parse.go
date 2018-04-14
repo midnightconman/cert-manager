@@ -5,7 +5,7 @@ import (
 	"crypto/x509"
 	"encoding/pem"
 
-	"github.com/jetstack/cert-manager/pkg/util/errors"
+	"github.com/midnightconman/cert-manager/pkg/util/errors"
 )
 
 func DecodePKCS1PrivateKeyBytes(keyBytes []byte) (*rsa.PrivateKey, error) {

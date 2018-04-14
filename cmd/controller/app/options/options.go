@@ -6,7 +6,7 @@ import (
 
 	"github.com/spf13/pflag"
 
-	"github.com/jetstack/cert-manager/pkg/util"
+	"github.com/midnightconman/cert-manager/pkg/util"
 )
 
 type ControllerOptions struct {

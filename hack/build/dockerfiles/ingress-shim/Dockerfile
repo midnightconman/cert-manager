@@ -1,8 +1,8 @@
-FROM alpine:3.6
+FROM alpine:3.7
 
 RUN apk add --no-cache ca-certificates
 
-ADD cert-manager-ingress-shim_linux_amd64 /usr/bin/ingress-shim
+ADD cert-manager-ingress-shim_linux_arm64 /usr/bin/ingress-shim
 
 ENTRYPOINT ["/usr/bin/ingress-shim"]
 ARG VCS_REF

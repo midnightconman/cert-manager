@@ -1,10 +1,10 @@
 PACKAGE_NAME := github.com/jetstack/cert-manager
-REGISTRY := quay.io/jetstack
+REGISTRY := midnightconman
 APP_NAME := cert-manager
-IMAGE_TAGS := canary
+IMAGE_TAGS := v0.2.4-arm64
 GOPATH ?= $HOME/go
 HACK_DIR ?= hack
-BUILD_TAG := build
+BUILD_TAG := v0.2.4
 
 # Domain name to use in e2e tests. This is important for ACME HTTP01 e2e tests,
 # which require a domain that resolves to the ingress controller to be used for
@@ -18,7 +18,7 @@ BOULDER_IMAGE_REPO=quay.io/munnerz/boulder
 # challenge requests, and any other future provider that requires additional
 # image dependencies will use this same tag.
 ifeq ($(APP_VERSION),)
-APP_VERSION := canary
+APP_VERSION := v0.2.4
 endif
 
 # Get a list of all binaries to be built
@@ -34,7 +34,7 @@ DOCKER_PUSH_TARGETS := $(addprefix docker_push_, $(CMDS))
 
 # Go build flags
 GOOS := linux
-GOARCH := amd64
+GOARCH := arm64
 GOLDFLAGS := -ldflags "-X $(PACKAGE_NAME)/pkg/util.AppGitState=${GIT_STATE} -X $(PACKAGE_NAME)/pkg/util.AppGitCommit=${GIT_COMMIT} -X $(PACKAGE_NAME)/pkg/util.AppVersion=${APP_VERSION}"
 
 .PHONY: verify build docker_build push generate generate_verify $(CMDS) go_test go_fmt $(DOCKER_BUILD_TARGETS) $(DOCKER_PUSH_TARGETS)

@@ -24,12 +24,12 @@ import (
 	"github.com/onsi/gomega"
 	_ "k8s.io/client-go/plugin/pkg/client/auth"
 
-	"github.com/jetstack/cert-manager/pkg/logs"
-	_ "github.com/jetstack/cert-manager/test/e2e/certificate"
-	_ "github.com/jetstack/cert-manager/test/e2e/clusterissuer"
-	"github.com/jetstack/cert-manager/test/e2e/framework"
-	_ "github.com/jetstack/cert-manager/test/e2e/ingress"
-	_ "github.com/jetstack/cert-manager/test/e2e/issuer"
+	"github.com/midnightconman/cert-manager/pkg/logs"
+	_ "github.com/midnightconman/cert-manager/test/e2e/certificate"
+	_ "github.com/midnightconman/cert-manager/test/e2e/clusterissuer"
+	"github.com/midnightconman/cert-manager/test/e2e/framework"
+	_ "github.com/midnightconman/cert-manager/test/e2e/ingress"
+	_ "github.com/midnightconman/cert-manager/test/e2e/issuer"
 )
 
 // TestE2E checks configuration parameters (specified through flags) and then runs

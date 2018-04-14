@@ -7,10 +7,10 @@ import (
 	extv1beta1 "k8s.io/api/extensions/v1beta1"
 	metav1 "k8s.io/apimachinery/pkg/apis/meta/v1"
 
-	"github.com/jetstack/cert-manager/cmd/ingress-shim/options"
-	"github.com/jetstack/cert-manager/pkg/apis/certmanager/v1alpha1"
-	cmfake "github.com/jetstack/cert-manager/pkg/client/clientset/versioned/fake"
-	cminformers "github.com/jetstack/cert-manager/pkg/client/informers/externalversions"
+	"github.com/midnightconman/cert-manager/cmd/ingress-shim/options"
+	"github.com/midnightconman/cert-manager/pkg/apis/certmanager/v1alpha1"
+	cmfake "github.com/midnightconman/cert-manager/pkg/client/clientset/versioned/fake"
+	cminformers "github.com/midnightconman/cert-manager/pkg/client/informers/externalversions"
 )
 
 func TestShouldSync(t *testing.T) {

@@ -1,8 +1,8 @@
-FROM alpine:3.6
+FROM alpine:3.7
 
 RUN apk add --no-cache ca-certificates
 
-ADD cert-manager-acmesolver_linux_amd64 /usr/bin/acmesolver
+ADD cert-manager-acmesolver_linux_arm64 /usr/bin/acmesolver
 
 ENTRYPOINT ["/usr/bin/acmesolver"]
 ARG VCS_REF

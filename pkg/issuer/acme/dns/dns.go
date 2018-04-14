@@ -9,11 +9,11 @@ import (
 	"k8s.io/client-go/kubernetes"
 	corev1listers "k8s.io/client-go/listers/core/v1"
 
-	"github.com/jetstack/cert-manager/pkg/apis/certmanager/v1alpha1"
-	"github.com/jetstack/cert-manager/pkg/issuer/acme/dns/clouddns"
-	"github.com/jetstack/cert-manager/pkg/issuer/acme/dns/cloudflare"
-	"github.com/jetstack/cert-manager/pkg/issuer/acme/dns/route53"
-	"github.com/jetstack/cert-manager/pkg/issuer/acme/dns/util"
+	"github.com/midnightconman/cert-manager/pkg/apis/certmanager/v1alpha1"
+	"github.com/midnightconman/cert-manager/pkg/issuer/acme/dns/clouddns"
+	"github.com/midnightconman/cert-manager/pkg/issuer/acme/dns/cloudflare"
+	"github.com/midnightconman/cert-manager/pkg/issuer/acme/dns/route53"
+	"github.com/midnightconman/cert-manager/pkg/issuer/acme/dns/util"
 )
 
 const (
