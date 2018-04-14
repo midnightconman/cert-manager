@@ -4,8 +4,8 @@ import (
 	"crypto/x509"
 	"crypto/x509/pkix"
 	"fmt"
-	"github.com/jetstack/cert-manager/pkg/apis/certmanager/v1alpha1"
-	"github.com/jetstack/cert-manager/pkg/util"
+	"github.com/midnightconman/cert-manager/pkg/apis/certmanager/v1alpha1"
+	"github.com/midnightconman/cert-manager/pkg/util"
 )
 
 // The provided Certificate *must* specify either a DNS name or a

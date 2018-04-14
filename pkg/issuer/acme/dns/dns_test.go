@@ -10,8 +10,8 @@ import (
 	kubeinformers "k8s.io/client-go/informers"
 	kubefake "k8s.io/client-go/kubernetes/fake"
 
-	"github.com/jetstack/cert-manager/pkg/apis/certmanager/v1alpha1"
-	"github.com/jetstack/cert-manager/pkg/issuer/acme/dns/cloudflare"
+	"github.com/midnightconman/cert-manager/pkg/apis/certmanager/v1alpha1"
+	"github.com/midnightconman/cert-manager/pkg/issuer/acme/dns/cloudflare"
 )
 
 type fixture struct {

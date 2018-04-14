@@ -8,8 +8,8 @@ import (
 	api "k8s.io/api/core/v1"
 	corelisters "k8s.io/client-go/listers/core/v1"
 
-	"github.com/jetstack/cert-manager/pkg/util/errors"
-	"github.com/jetstack/cert-manager/pkg/util/pki"
+	"github.com/midnightconman/cert-manager/pkg/util/errors"
+	"github.com/midnightconman/cert-manager/pkg/util/pki"
 )
 
 func GetKeyPair(secretLister corelisters.SecretLister, namespace, name string) (certBytes []byte, keyBytes []byte, err error) {

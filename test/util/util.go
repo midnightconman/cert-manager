@@ -15,9 +15,9 @@ import (
 	"k8s.io/apimachinery/pkg/util/intstr"
 	"k8s.io/apimachinery/pkg/util/wait"
 
-	"github.com/jetstack/cert-manager/pkg/apis/certmanager/v1alpha1"
-	clientset "github.com/jetstack/cert-manager/pkg/client/clientset/versioned/typed/certmanager/v1alpha1"
-	"github.com/jetstack/cert-manager/pkg/util"
+	"github.com/midnightconman/cert-manager/pkg/apis/certmanager/v1alpha1"
+	clientset "github.com/midnightconman/cert-manager/pkg/client/clientset/versioned/typed/certmanager/v1alpha1"
+	"github.com/midnightconman/cert-manager/pkg/util"
 )
 
 var ACMECertificateDomain string

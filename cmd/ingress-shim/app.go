@@ -17,13 +17,13 @@ import (
 	"k8s.io/client-go/tools/leaderelection/resourcelock"
 	"k8s.io/client-go/tools/record"
 
-	"github.com/jetstack/cert-manager/cmd/ingress-shim/controller"
-	"github.com/jetstack/cert-manager/cmd/ingress-shim/options"
-	clientset "github.com/jetstack/cert-manager/pkg/client/clientset/versioned"
-	intscheme "github.com/jetstack/cert-manager/pkg/client/clientset/versioned/scheme"
-	informers "github.com/jetstack/cert-manager/pkg/client/informers/externalversions"
-	"github.com/jetstack/cert-manager/pkg/util/kube"
-	kubeinformers "github.com/jetstack/cert-manager/third_party/k8s.io/client-go/informers"
+	"github.com/midnightconman/cert-manager/cmd/ingress-shim/controller"
+	"github.com/midnightconman/cert-manager/cmd/ingress-shim/options"
+	clientset "github.com/midnightconman/cert-manager/pkg/client/clientset/versioned"
+	intscheme "github.com/midnightconman/cert-manager/pkg/client/clientset/versioned/scheme"
+	informers "github.com/midnightconman/cert-manager/pkg/client/informers/externalversions"
+	"github.com/midnightconman/cert-manager/pkg/util/kube"
+	kubeinformers "github.com/midnightconman/cert-manager/third_party/k8s.io/client-go/informers"
 )
 
 const controllerAgentName = "ingress-shim-controller"

@@ -3,7 +3,7 @@ package pki
 import (
 	"testing"
 
-	"github.com/jetstack/cert-manager/pkg/apis/certmanager/v1alpha1"
+	"github.com/midnightconman/cert-manager/pkg/apis/certmanager/v1alpha1"
 )
 
 func buildCertificate(cn string, dnsNames ...string) *v1alpha1.Certificate {

@@ -7,8 +7,8 @@ import (
 	"k8s.io/api/core/v1"
 
 	"github.com/golang/glog"
-	"github.com/jetstack/cert-manager/pkg/apis/certmanager/v1alpha1"
-	"github.com/jetstack/cert-manager/pkg/util/kube"
+	"github.com/midnightconman/cert-manager/pkg/apis/certmanager/v1alpha1"
+	"github.com/midnightconman/cert-manager/pkg/util/kube"
 )
 
 const (

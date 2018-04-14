@@ -4,10 +4,10 @@ import (
 	"k8s.io/client-go/kubernetes"
 	"k8s.io/client-go/tools/record"
 
-	clientset "github.com/jetstack/cert-manager/pkg/client/clientset/versioned"
-	informers "github.com/jetstack/cert-manager/pkg/client/informers/externalversions"
-	"github.com/jetstack/cert-manager/pkg/issuer"
-	kubeinformers "github.com/jetstack/cert-manager/third_party/k8s.io/client-go/informers"
+	clientset "github.com/midnightconman/cert-manager/pkg/client/clientset/versioned"
+	informers "github.com/midnightconman/cert-manager/pkg/client/informers/externalversions"
+	"github.com/midnightconman/cert-manager/pkg/issuer"
+	kubeinformers "github.com/midnightconman/cert-manager/third_party/k8s.io/client-go/informers"
 )
 
 // Context contains various types that are used by controller implementations.

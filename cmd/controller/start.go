@@ -9,14 +9,14 @@ import (
 	utilerrors "k8s.io/apimachinery/pkg/util/errors"
 	_ "k8s.io/client-go/plugin/pkg/client/auth"
 
-	"github.com/jetstack/cert-manager/cmd/controller/app"
-	"github.com/jetstack/cert-manager/cmd/controller/app/options"
-	_ "github.com/jetstack/cert-manager/pkg/controller/certificates"
-	_ "github.com/jetstack/cert-manager/pkg/controller/clusterissuers"
-	_ "github.com/jetstack/cert-manager/pkg/controller/issuers"
-	_ "github.com/jetstack/cert-manager/pkg/issuer/acme"
-	_ "github.com/jetstack/cert-manager/pkg/issuer/ca"
-	"github.com/jetstack/cert-manager/pkg/util"
+	"github.com/midnightconman/cert-manager/cmd/controller/app"
+	"github.com/midnightconman/cert-manager/cmd/controller/app/options"
+	_ "github.com/midnightconman/cert-manager/pkg/controller/certificates"
+	_ "github.com/midnightconman/cert-manager/pkg/controller/clusterissuers"
+	_ "github.com/midnightconman/cert-manager/pkg/controller/issuers"
+	_ "github.com/midnightconman/cert-manager/pkg/issuer/acme"
+	_ "github.com/midnightconman/cert-manager/pkg/issuer/ca"
+	"github.com/midnightconman/cert-manager/pkg/util"
 )
 
 type CertManagerControllerOptions struct {
